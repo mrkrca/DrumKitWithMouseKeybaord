@@ -10,11 +10,9 @@ for(let i = 0; i < document.querySelectorAll(".drum").length;i++ ){
         makeSound(buttonInnerHtml);
         buttonAnimation(buttonInnerHtml);
 
-
-
     });
     
-    
+
 }
 
 //Detecting keyboard Press
@@ -22,10 +20,8 @@ for(let i = 0; i < document.querySelectorAll(".drum").length;i++ ){
 document.addEventListener("keypress", function(event){
     makeSound(event.key);
     buttonAnimation(event.key);
- 
  })
  
-
 
 function makeSound(key) {
     switch (key) {
